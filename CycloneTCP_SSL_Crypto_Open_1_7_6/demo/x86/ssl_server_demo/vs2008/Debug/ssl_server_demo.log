@@ -1,0 +1,24 @@
+﻿  tls_server_misc.c
+  tls_misc.c
+  pem.c
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(494): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(494): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(496): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(496): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(498): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(498): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(500): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(500): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(502): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(502): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(504): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(504): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(506): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(506): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(508): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\user\downloads\cyclonetcp_ssl_crypto_open_1_7_6\cyclonetcp_ssl_crypto_open_1_7_6\cyclone_crypto\pem.c(508): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  cipher_mode_cbc.c
+  asn1.c
+  Generating Code...
+  ssl_server_demo.vcxproj -> C:\Users\USER\Downloads\CycloneTCP_SSL_Crypto_Open_1_7_6\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\ssl_server_demo\vs2008\Debug\ssl_server_demo.exe
+  ssl_server_demo.vcxproj -> C:\Users\USER\Downloads\CycloneTCP_SSL_Crypto_Open_1_7_6\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\ssl_server_demo\vs2008\Debug\ssl_server_demo.pdb (Full PDB)

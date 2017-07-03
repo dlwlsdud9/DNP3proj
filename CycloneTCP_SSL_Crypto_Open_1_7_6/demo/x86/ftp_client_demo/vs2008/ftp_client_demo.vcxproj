@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{036BF4CE-AFF9-4A49-A5DB-AA25861F4BC4}</ProjectGuid>
+    <RootNamespace>ftp_client_demo</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..\src;..\..\..\..\demo\common\winpcap\include;..\..\..\..\common;..\..\..\..\cyclone_crypto;..\..\..\..\cyclone_ssl;..\..\..\..\cyclone_tcp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_ERRNO_DEFINED;_DONT_USE_WINSOCK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>packet.lib;wpcap.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\demo\common\winpcap\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\;..\src;..\..\..\..\demo\common\winpcap\include;..\..\..\..\common;..\..\..\..\cyclone_crypto;..\..\..\..\cyclone_ssl;..\..\..\..\cyclone_tcp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_ERRNO_DEFINED;_DONT_USE_WINSOCK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>packet.lib;wpcap.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\demo\common\winpcap\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\common\cpu_endian.c" />
+    <ClCompile Include="..\..\..\..\common\date_time.c" />
+    <ClCompile Include="..\..\..\..\common\debug.c" />
+    <ClCompile Include="..\..\..\..\common\os_port_windows.c" />
+    <ClCompile Include="..\..\..\..\common\str.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\bsd_socket.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\ethernet.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\ip.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\net.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\net_mem.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\nic.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\ping.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\raw_socket.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\socket.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\tcp.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\tcp_fsm.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\tcp_misc.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\tcp_timer.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\core\udp.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_client.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_common.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_debug.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_relay.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_client.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_common.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_debug.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_server.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dns\dns_cache.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dns\dns_client.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dns\dns_common.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dns\dns_debug.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\dns_sd\dns_sd.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\drivers\pcap_driver.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ftp\ftp_client.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv4\arp.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv4\auto_ip.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv4\icmp.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv4\igmp.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv4\ipv4.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv4\ipv4_frag.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\icmpv6.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ipv6.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_frag.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_misc.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_pmtu.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_routing.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\mld.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ndp.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ndp_cache.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ndp_misc.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\ndp_router_adv.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\ipv6\slaac.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\mdns\mdns_client.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\mdns\mdns_common.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\mdns\mdns_responder.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\netbios\nbns_client.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\netbios\nbns_common.c" />
+    <ClCompile Include="..\..\..\..\cyclone_tcp\netbios\nbns_responder.c" />
+    <ClCompile Include="..\src\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\common\cpu_endian.h" />
+    <ClInclude Include="..\..\..\..\common\date_time.h" />
+    <ClInclude Include="..\..\..\..\common\debug.h" />
+    <ClInclude Include="..\..\..\..\common\error.h" />
+    <ClInclude Include="..\..\..\..\common\os_port.h" />
+    <ClInclude Include="..\..\..\..\common\os_port_windows.h" />
+    <ClInclude Include="..\..\..\..\common\str.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\bsd_socket.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\ethernet.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\ip.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\net.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\net_legacy.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\net_mem.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\nic.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\ping.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\raw_socket.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\socket.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\tcp.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\tcp_fsm.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\tcp_misc.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\tcp_timer.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\core\udp.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_client.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_common.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_debug.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcpv6\dhcpv6_relay.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_client.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_common.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_debug.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dhcp\dhcp_server.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dns\dns_cache.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dns\dns_client.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dns\dns_common.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dns\dns_debug.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\dns_sd\dns_sd.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\drivers\pcap_driver.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ftp\ftp_client.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv4\arp.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv4\auto_ip.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv4\icmp.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv4\igmp.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv4\ipv4.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv4\ipv4_frag.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\icmpv6.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ipv6.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_frag.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_misc.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_pmtu.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ipv6_routing.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\mld.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ndp.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ndp_cache.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ndp_misc.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\ndp_router_adv.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\ipv6\slaac.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\mdns\mdns_client.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\mdns\mdns_common.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\mdns\mdns_responder.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\netbios\nbns_client.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\netbios\nbns_common.h" />
+    <ClInclude Include="..\..\..\..\cyclone_tcp\netbios\nbns_responder.h" />
+    <ClInclude Include="..\src\net_config.h" />
+    <ClInclude Include="..\src\os_port_config.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

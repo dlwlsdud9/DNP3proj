@@ -1,14 +1,14 @@
 ﻿  main.c
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(214): warning C4013: 'pemReadCertificate' undefined; assuming extern returning int
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(215): warning C4013: 'pemReadRsaPrivateKey' undefined; assuming extern returning int
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(218): warning C4013: 'pemReadRsaPublicKey' undefined; assuming extern returning int
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(240): warning C4047: 'function': 'uint8_t *' differs in levels of indirection from 'uint8_t (*)[16]'
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(240): warning C4024: 'yarrowRead': different types for formal and actual parameter 2
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(267): warning C4090: 'function': different 'const' qualifiers
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(390): warning C4047: 'function': 'uint8_t *' differs in levels of indirection from 'uint8_t (*)[16]'
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(390): warning C4024: 'yarrowRead': different types for formal and actual parameter 2
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(440): warning C4013: 'cbcEncrypt' undefined; assuming extern returning int
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(447): warning C4013: 'cbcDecrypt' undefined; assuming extern returning int
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(265): warning C4101: 'x': unreferenced local variable
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(427): warning C4013: 'pemReadCertificate' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(429): warning C4013: 'pemReadRsaPrivateKey' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(435): warning C4013: 'pemReadRsaPublicKey' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(479): warning C4047: 'function': 'uint8_t *' differs in levels of indirection from 'uint8_t (*)[16]'
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(479): warning C4024: 'yarrowRead': different types for formal and actual parameter 2
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(533): warning C4090: 'function': different 'const' qualifiers
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(779): warning C4047: 'function': 'uint8_t *' differs in levels of indirection from 'uint8_t (*)[16]'
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(779): warning C4024: 'yarrowRead': different types for formal and actual parameter 2
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(885): warning C4013: 'cbcEncrypt' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(896): warning C4013: 'cbcDecrypt' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(529): warning C4101: 'x': unreferenced local variable
   ssl_client_demo.vcxproj -> C:\Github\DNP3proj\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\AES DEMO\vs2008\Debug\AES_demo.exe
   ssl_client_demo.vcxproj -> C:\Github\DNP3proj\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\AES DEMO\vs2008\Debug\AES_demo.pdb (Full PDB)

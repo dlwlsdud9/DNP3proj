@@ -19,6 +19,7 @@ c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\deb
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\tls_record.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\tls_server.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\tls_server_misc.obj
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\main.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\cipher_mode_cbc.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\cipher_mode_ccm.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\cipher_mode_gcm.obj
@@ -50,7 +51,6 @@ c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\deb
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\camellia.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\chacha.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\chacha20_poly1305.obj
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\main.obj
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\aes_demo.ilk
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\aes_demo.exe
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\vs2008\debug\aes_demo.pdb

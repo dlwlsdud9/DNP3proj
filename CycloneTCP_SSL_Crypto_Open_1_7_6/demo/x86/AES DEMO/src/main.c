@@ -284,14 +284,14 @@ int_t main(int argc, char **argv){
 			// Validate the parameters
 			if (argc != 2) {
 				printf("usage: %s server-name\n", argv[0]);
-				return 1;
+				//return 1;
 			}
 
 			// Initialize Winsock
 			iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 			if (iResult != 0) {
 				printf("WSAStartup failed with error: %d\n", iResult);
-				return 1;
+				//return 1;
 			}
 
 			ZeroMemory(&hints, sizeof(hints));
@@ -338,7 +338,8 @@ int_t main(int argc, char **argv){
 			}
 
 			// Send an initial buffer
-			iResult = send(ConnectSocket, sendbuf, (int)strlen(sendbuf), 0);
+			//iResult = send(ConnectSocket, sendbuf, (int)strlen(sendbuf), 0);
+			iResult = send(ConnectSocket, sendbuf, 1019, 0);
 			if (iResult == SOCKET_ERROR) {
 				printf("send failed with error: %d\n", WSAGetLastError());
 				closesocket(ConnectSocket);
@@ -374,7 +375,7 @@ int_t main(int argc, char **argv){
 			closesocket(ConnectSocket);
 			WSACleanup();
 
-			return 0;
+			//return 0;
 			///////////////////////////////////////////TCPIP ends///////////////////////////////////////
 		}
 		else if (keyupdate == 0) {

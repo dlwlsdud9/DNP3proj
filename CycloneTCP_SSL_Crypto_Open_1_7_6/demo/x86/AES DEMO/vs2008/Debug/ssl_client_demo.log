@@ -7,12 +7,12 @@ c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(233): warning C4047: 'function': 'uint8_t *' differs in levels of indirection from 'uint8_t (*)[16]'
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(233): warning C4024: 'yarrowRead': different types for formal and actual parameter 2
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(258): warning C4090: 'function': different 'const' qualifiers
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(509): warning C4047: 'function': 'uint8_t *' differs in levels of indirection from 'uint8_t (*)[16]'
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(509): warning C4024: 'yarrowRead': different types for formal and actual parameter 2
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(538): warning C4013: 'cbcEncrypt' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(510): warning C4047: 'function': 'uint8_t *' differs in levels of indirection from 'uint8_t (*)[16]'
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(510): warning C4024: 'yarrowRead': different types for formal and actual parameter 2
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(539): warning C4013: 'cbcEncrypt' undefined; assuming extern returning int
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(279): warning C4047: 'initializing': 'char *' differs in levels of indirection from 'char (*)[1019]'
-c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(384): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'uint8_t *'
-  c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(384): note: consider using '%hhd' in the format string
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(385): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'uint8_t *'
+  c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(385): note: consider using '%hhd' in the format string
 c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\aes demo\src\main.c(256): warning C4101: 'x': unreferenced local variable
   ssl_client_demo.vcxproj -> C:\Github\DNP3proj\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\AES DEMO\vs2008\Debug\AES_demo.exe
   ssl_client_demo.vcxproj -> C:\Github\DNP3proj\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\AES DEMO\vs2008\Debug\AES_demo.pdb (Full PDB)

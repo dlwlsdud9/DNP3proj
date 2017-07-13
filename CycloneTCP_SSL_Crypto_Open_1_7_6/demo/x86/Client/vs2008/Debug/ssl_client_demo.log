@@ -1,4 +1,6 @@
 ﻿  main.c
-cpu_endian.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\client\src\main.c(176): warning C4013: 'pemReadCertificate' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\client\src\main.c(183): warning C4013: 'pemReadRsaPrivateKey' undefined; assuming extern returning int
+c:\github\dnp3proj\cyclonetcp_ssl_crypto_open_1_7_6\demo\x86\client\src\main.c(186): warning C4013: 'pemReadRsaPublicKey' undefined; assuming extern returning int
   ssl_client_demo.vcxproj -> C:\Github\DNP3proj\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\Client\vs2008\Debug\AES_demo.exe
   ssl_client_demo.vcxproj -> C:\Github\DNP3proj\CycloneTCP_SSL_Crypto_Open_1_7_6\demo\x86\Client\vs2008\Debug\AES_demo.pdb (Full PDB)
